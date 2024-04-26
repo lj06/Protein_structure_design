@@ -11,7 +11,7 @@ def download_pdb(file_path):
         url = base_url.format(uni_id=uni_id)
         response = requests.get(url)
         if response.status_code == 200:
-            file_path = f"D:\\Users\\Zzz\\Desktop\\CX4803\\{uni_id}.pdb"  # specify your directory here
+            file_path = f"Path\\{uni_id}.pdb"  # specify your directory here
             with open(file_path, 'wb') as f:
                 f.write(response.content)
             print(f"Downloaded: {file_path}")
@@ -19,6 +19,6 @@ def download_pdb(file_path):
             print(f"Failed to download {uni_id}: Status code {response.status_code}")
 
 # Path to the file with UniProt IDs
-file_path = "D:\\Users\\Zzz\\Desktop\\CX4803\\ecoli.txt"
+file_path = "Path\\ecoli.txt"
 
 download_pdb(file_path)
