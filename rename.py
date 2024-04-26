@@ -4,7 +4,7 @@ import os
 import re
 
 # gdb的文件路径
-folder_path = "./gdb/"
+folder_path = "./data/"
 
 for filename in os.listdir(folder_path):
     # 路径
