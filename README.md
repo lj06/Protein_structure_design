@@ -27,4 +27,5 @@ Command line usage for ```list.py```
 
 Extract the protein sequence into a CSV file based on the [Uniprot_list].txt with ```sequence.py```.
 
-
+Install pymol and
+run ```convert_image.sh``` to obtain six 2D PNG files from the PDB files.
